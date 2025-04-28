@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - canvine
+name: Build and deploy Node.js app to Azure Web App - canvinee
 
 on:
   push:
@@ -60,15 +60,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2742EDA42E154E3088497035204B6644 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_56F95F95950C4B13A73B5A5EA82DF6BA }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_375CAE01A8474C01BFF1B82B539CE797 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0A4D5C0ECDF44DC7BCC2910BE053D331 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_239452C689E446C6ACE2742789F71EE6 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3CC9E232479A436CA190ABE4B34E7525 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'canvine'
+          app-name: 'canvinee'
           slot-name: 'Production'
           package: .
           
